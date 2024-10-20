@@ -26,6 +26,7 @@ body {
     background-color: var(--osn);
     color: var(--weiB);
     margin: 0 auto;
+    justify-content: center;
 }
 
 .open {
@@ -50,6 +51,14 @@ header {
 
 .accent {
     color: var(--accent);
+}
+
+#profile1 {
+    display: none;
+}
+
+#logo1 {
+    display: none;
 }
 
 #hero .accent {
@@ -86,6 +95,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 18px;
+    margin-top: 0px;
 }
 
 .burger {
@@ -107,8 +117,8 @@ header {
 .burger::before, .burger::after {
     content: '';
     position: absolute;
-    height: 1px;
-    width: 100%;
+    height: 3px;
+    width: 120%;
     background-color: #000000;
     transition: all 0.3s ease 0s;
 }
@@ -130,6 +140,7 @@ header {
 
 #hero {
     position: relative;
+    width: 750px;
     left: 293px;
 }
 
@@ -408,10 +419,28 @@ button {
 }
 
 @media (max-width: 1536px) {
+
+    /* body {
+    width: 1536px;
+    height: 4700px;
+    margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    } */
+
     header {
         background-image: url("/img/BG\ 2.png");
+        width: 100%;
         height: 1682px;
         position: relative;
+    }
+
+    #menu-bar {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
     #hero {
@@ -421,12 +450,14 @@ button {
 
     #container {
         width: 1536px;
+
     }
 }
 
 @media (max-width: 1024px) {
     header {
         background-image: url("/img/BG\ 3.png");
+        width: 100%;
         height: 1443px;
         position: relative;
     }
@@ -442,7 +473,7 @@ button {
     }
 
     #manu {
-        margin-left: 30px;
+        margin-left: 211px;
     }
 
     .sr2 {
@@ -511,18 +542,32 @@ button {
 @media (max-width: 768px) {
     header {
         background-image: url("/img/BG.png");
-        height: 1440px;
+        width: 100%;
+        height: 1490px;
         position: relative;
     }
 
+    #logo1 {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    #profile {
+        display: none;
+    }
+
     .burger { display: flex; }
+
+    #profile1 {
+        display: flex;
+    }
 
     .nav {
         display: none;
         flex-direction: column;
         position: fixed;
-        height: 100%;
-        width: 100%;
+        height: 38%;
+        width: 81%;
         top: 0; bottom: 0; left: 0; right: 0;
         z-index: 50;
         overflow-y: auto;
@@ -647,4 +692,163 @@ button {
     #conteiner {
         width: 600px;
     }
+}
+
+@media (max-width: 430px) {
+    #profile {
+        margin-left: -22%;
+    }
+    header {
+    width: 100%;
+    }
+    body {
+        width: 430px;
+        height: 932px;
+    }
+    #container {
+        width: 430px;
+    }
+    img {
+        width: 430px;
+        height: 510px;
+        margin-left: -86px;
+    }
+
+    main {
+        width: 430px;
+        height: 3530px;
+    }
+
+    #hero {
+        left: 16px;
+        width: 290px;
+    }
+
+    .sr2 {
+        left: 272px;
+        top: -15px;
+        writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+    }
+
+    .sr1 {
+        top: -289px;
+        right: 28px;
+    }
+
+    .gl {
+        margin-top: 79px;
+        width: 387px;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .big {
+        font-size: 4rem;
+        position: absolute;
+        top: -5rem;
+        opacity: 0.1;
+        padding: 8px 6px;
+        margin-left: 36px;
+        margin-top: 147px;
+    }
+    body section h2 {
+        font-family: var(--main-font);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .osntext {
+        width: 320px;
+        height: 275px;
+        margin-left: 45px;
+        margin-top: 125px;
+    }
+    .osntext1 {
+        width: 320px;
+        height: 235px;
+        margin-left: 45px;
+        margin-top: 125px;
+    }
+
+    .osntext2 {
+        width: 320px;
+        height: 235px;
+        margin-left: 45px;
+        margin-top: 125px;
+    }
+
+    .name3 {
+        gap: 12px;
+        margin-left: 43px;
+        
+    }
+    .name2 {
+        gap: 12px;
+        margin-left: 43px;
+}
+.name1 {
+    gap: 12px;
+    margin-left: 43px;
+}
+footer {
+    margin-top: -624px;
+    margin-left: 21px;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+}
+.data1 {
+    width: 350px;
+    margin-top: 385px;
+    margin-left: -9px;
+}
+
+.section3 {
+    margin-left: 16px;
+}
+.section2{
+    margin-left: 16px;
+}
+.section1 {
+    margin-left: 16px;
+    width: 295px;
+    height: 132px;
+}
+
+main section {
+    display: block;
+    position: relative;
+    width: 388px;
+    height: 465px;
+}
+
+.gl2 {
+    width: 387px;
+    margin-top: 213px;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.gl3 {
+    width: 387px;
+    margin-top: 180px;
+}
+.list-cont1 {
+    margin-left: 86px;
+    margin-top: 75px;
+}
+
+.list-cont2 {
+    margin-left: 86px;
+    margin-top: 75px;
+}
+
+.list-cont3 {
+    margin-left: 86px;
+    margin-top: 75px;
+}
+
+.parent {
+    width: 89%;
+}
 }
